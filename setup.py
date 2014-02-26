@@ -44,14 +44,14 @@ def get_version(package):
 version = get_version(package)
 
 
-with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
+with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
     long_description = readme.read()
 
 
 # Publish command `python setup.py publish`
 if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist register upload')
-    os.system('python2.7 setup.py bdist_wheel register upload')
+    os.system('python setup.py bdist_wheel register upload')
     print('===================')
     print('You probably want to tag the version now:')
     print('git tag {0}'.format(version))
