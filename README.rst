@@ -11,19 +11,19 @@ Using Github:
 
 ::
 
-    git clone git@github.com:getblimp/blimp-python.git
+    git clone git@github.com:jpadilla/designer-news-python.git
 
 Using pip:
 
 ::
 
-    pip install blimp
+    pip install designer-news
 
 Using easy\_install:
 
 ::
 
-    easy_install blimp
+    easy_install designer-news
 
 Usage
 -----
