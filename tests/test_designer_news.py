@@ -38,7 +38,7 @@ class DesignerNewsTestCase(unittest.TestCase):
 
         dn.authenticate(username='user', password='password')
 
-        self.assertIsNotNone(dn.access_token)
+        self.assertNotEqual(dn.access_token, None)
         self.assertEqual(dn.access_token, self.access_token)
 
     def test_user_information(self):
